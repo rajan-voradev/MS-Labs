@@ -1,0 +1,16 @@
+-department
+
+curl -X POST -H "Content-Type: application/json" -d @c:/personal/rvlabs/dept.json http://localhost:9001/departments/
+curl --request GET http://localhost:9001/departments/1
+
+using api-gateway
+curl -X POST -H "Content-Type: application/json" -d @c:/personal/rvlabs/dept.json http://localhost:9191/departments/
+curl --request GET http://localhost:9191/departments/1
+
+
+--user
+curl -X POST -H "Content-Type: application/json" -d @c:/personal/rvlabs/user.json http://localhost:9002/users/
+curl --request GET http://localhost:9002/users/1
+using api-gateway
+curl -X POST -H "Content-Type: application/json" -d @c:/personal/rvlabs/user.json http://localhost:9191/users/
+curl --request GET http://localhost:9191/users/1
